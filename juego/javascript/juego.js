@@ -105,7 +105,6 @@ $(function() {
 			this.on("bump.left, bump.right", function(colision) {
 				if (colision.obj.isA("Jugador")) {
 					colision.obj.destroy();
-					Q.stageScene("gameOver");
 				}
 			});
 		},
